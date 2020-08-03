@@ -1,0 +1,26 @@
+{
+    "name": "developer-portfolio-blog-theme",
+    "version": "1.0",
+    "description": "Developer portfolio and blog website made with Hugo and TailwindCSS.",
+    "main": "index.js",
+    "repository": "https://github.com/shihern/developer-portfolio-blog",
+    "author": "Connor Lim <dev@connorlim.net>",
+    "license": "AGPL-3.0-or-later",
+    "scripts": {
+        "start": "hugo --gc"
+    },
+    "devDependencies": {
+        "@fullhuman/postcss-purgecss": "^2.2.0",
+        "autoprefixer": "^9.8.0",
+        "postcss": "^7.0.32",
+        "postcss-cli": "^7.1.1",
+        "postcss-import": "^12.0.1",
+        "tailwindcss": "^1.4.6"
+    },
+    "browserslist": [
+        "last 1 version",
+        "> 1%",
+        "maintained node versions",
+        "not dead"
+    ]
+}

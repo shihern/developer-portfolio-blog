@@ -1,0 +1,29 @@
+{{/*
+Copyright (C) 2020 Connor Lim
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU Affero General Public License as
+published by the Free Software Foundation, either version 3 of the
+License, or (at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU Affero General Public License for more details.
+
+You should have received a copy of the GNU Affero General Public License
+along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/}}
+
+<header class="flex justify-center fixed bg-white items-center inset-x-0 top-0 px-4 md:px-8 lg:px-10 h-16 border-b z-40">
+    <nav class="flex justify-between items-center w-full h-full max-w-screen-xl">
+        <a href="{{ .Site.Home.Permalink }}" class="flex items-center h-full lg:px-5 text-gray-800 hover:text-link hover:no-underline text-xl font-bold">
+            {{- .Site.Title -}}
+        </a>
+        <div class="flex items-center w-auto h-full space-x-4 md:space-x-6 ml-auto text-gray-700">
+            {{- range .Site.Sections -}}
+            <a href="{{ .Permalink }}" class="flex items-center h-full lg:px-5 no-link hover:no-underline hover:text-gray-900">{{ .Title }}</a>
+            {{- end }}
+        </div>
+    </nav>
+</header>

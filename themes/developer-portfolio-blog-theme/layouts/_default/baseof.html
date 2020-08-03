@@ -1,0 +1,29 @@
+{{/*
+Copyright (C) 2020 Connor Lim
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU Affero General Public License as
+published by the Free Software Foundation, either version 3 of the
+License, or (at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU Affero General Public License for more details.
+
+You should have received a copy of the GNU Affero General Public License
+along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/}}
+
+<!DOCTYPE html>
+<html class="h-full" lang='{{ .Site.LanguageCode }}'>
+    {{- partial "head.html" . -}}
+    <body class="w-full h-full flex flex-col leading-relaxed">
+        {{- partial "dev-size-indicator.html" . -}}
+        {{- partial "header.html" . -}}
+        <main class="flex flex-auto w-full max-w-screen-xl mx-auto mt-16 px-4 md:px-8 lg:px-20">
+        {{- block "main" . -}}{{- end -}}
+        </main>
+        {{- partial "footer.html" . -}}
+    </body>
+</html>

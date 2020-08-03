@@ -1,0 +1,32 @@
+{{/*
+Copyright (C) 2020 Connor Lim
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU Affero General Public License as
+published by the Free Software Foundation, either version 3 of the
+License, or (at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU Affero General Public License for more details.
+
+You should have received a copy of the GNU Affero General Public License
+along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/}}
+
+{{- define "main" -}}
+<article class="text-gray-700 md:mx-20">
+    <h1 class="font-bold text-5xl text-gray-800 mb-0 mt-12">{{ .Title }}</h1>
+    <div class="flex flex-row items-center">
+        <div class="fill-current h-auto w-5 mr-1">
+            {{- readFile "/assets/icons/calendar.svg"| safeHTML -}}
+        </div>
+        <div>Posted on {{ dateFormat "2006-01-02" .Date }}</div>
+    </div>
+    <div class="mt-1 italic">
+        Estimated Reading Time: {{ math.Round (div (countwords .Content) 200.0) }} minutes.
+    </div>
+    <div class="mt-8">{{ .Content }}</div>
+</article>
+{{- end -}}
