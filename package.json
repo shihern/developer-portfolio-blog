@@ -1,6 +1,6 @@
 {
     "name": "developer-portfolio-blog-theme",
-    "version": "1.0",
+    "version": "1.0.0",
     "description": "Developer portfolio and blog website made with Hugo and TailwindCSS.",
     "main": "index.js",
     "repository": "https://github.com/shihern/developer-portfolio-blog",
