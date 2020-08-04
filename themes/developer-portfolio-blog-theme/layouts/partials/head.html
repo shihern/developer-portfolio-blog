@@ -42,7 +42,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     <link rel="stylesheet" href="{{ $styles.RelPermalink }}">
     {{ else }}
     {{- $styles := $styles| minify | fingerprint | resources.PostProcess -}}
-    <link rel="stylesheet" href="{{ $styles.Permalink }}" integrity="{{ $styles.Data.Integrity }}">
+    <link rel="stylesheet" href="{{ $styles.RelPermalink }}" integrity="{{ $styles.Data.Integrity }}">
     {{ end -}}
 
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
