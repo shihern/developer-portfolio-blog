@@ -1,6 +1,7 @@
 resources/_gen/
 public/
 .directory
+.vscode/
 
 # Logs
 logs
