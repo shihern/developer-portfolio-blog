@@ -4,10 +4,7 @@ Developer portfolio and blog website made with Hugo and TailwindCSS. Live demo c
 ## Prerequisites
 Install required dependencies
 ```bash
-npm install -g postcss-cli
-npm install -g autoprefixer
-
-npm install
+npm run setup
 ```
 
 ## Configuration
@@ -104,13 +101,13 @@ Place `favicon-32x32.png` and `favicon-16x16.png` in the root of the `static/` f
 ## Running
 Run the Hugo dev server:
 ```bash
-hugo server --disableFastRender
+npm run dev
 ```
 
 ## Deployment
 Generate minified static files for deployment. Files will be stored in `public/`
 ```bash
-hugo --minify
+npm run build
 ```
 
 ## Licenses
