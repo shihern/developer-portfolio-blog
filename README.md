@@ -118,4 +118,4 @@ The MIT-licensed files are:
 - `styles.css`
 - `dev-size-indicator.html`
 
-All other files are written are by me and licensed under the AGPLv3.
+All other files are written are by me and licensed under the AGPLv3 (or any later version).
