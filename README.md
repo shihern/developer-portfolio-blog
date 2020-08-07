@@ -20,7 +20,7 @@ title: "Site Name"
 ### Fill in your contact details
 Edit `config.yaml`. Put your name in the `author` section. Enter your various email addresses and social media accounts under the `social` section. Links will be auto-generated in the footer for each social item.
 
-For the icon, enter the name of an svg file. The icon file should be stored at `assets/icons/<icon-name.svg>`.
+For the svg icon, enter the name of an svg file. The icon file should be stored at `assets/icons/<icon-name>.svg`.
 
 **Note: the icon is REQUIRED**
 
@@ -30,7 +30,7 @@ params:
   social:
   - title: Email
     url: mailto:hello@example.com
-    icon: calendar.svg
+    svg: calendar
 ```
 
 ### Set up the Homepage Portfolio
@@ -54,16 +54,16 @@ aboutme:
 ```yaml
 skills:
   - name: Skill 1
-    icon: calendar.svg
+    svg: calendar
 ```
 #### Note:
-Each skill has an `icon` field containing the filename of the **svg** icon. The svg file has to be added at `assets/icons/<icon-name.svg>`. Hugo will throw an error if the svg file is not found.
+Each skill has a **mandatory** `svg` field. The svg file has to be added at `assets/icons/<icon-name>.svg`. Hugo will throw an error if the svg file is not found or the field is not filled.
 
 Note that the icons are generated on the page by directly outputting the svg into the HTML source. **You will have to modify the templates to use `<img>` tags if you wish to use other file formats.**
 
 Additionally, Hugo live reload is not able to detect if you modify the svg file. You have to forcibly reload the server if you edit the svg file on disk
 
-4. Enter your working experience
+1. Enter your working experience
 ```yaml
 experience:
   - title: Job Title

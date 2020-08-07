@@ -27,4 +27,4 @@ params:
   social:
   - title: Email
     url: mailto:hello@example.com
-    icon: calendar.svg
+    svg: calendar

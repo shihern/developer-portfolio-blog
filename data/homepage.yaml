@@ -24,7 +24,7 @@ aboutme:
 
 skills:
   - name: Skill 1
-    icon: calendar.svg
+    svg: calendar
 
 experience:
   - title: Job

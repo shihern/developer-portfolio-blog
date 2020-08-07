@@ -24,7 +24,7 @@
         {{- range .Site.Params.social }}
         <a rel="me" href="{{ .url }}" class="flex flex-row items-center no-link underline hover:text-blue-400 fill-current mx-3 p-3 md:p-0 lg:p-0">
             <div class="h-auto w-4 mr-2">
-                {{- readFile (print "/assets/icons/" (.icon)) | safeHTML -}}
+                {{- partial "svg.html" .svg -}}
             </div>
             <div class="text-md">{{- .title -}}</div>
         </a>
@@ -32,9 +32,9 @@
     </div>
     <hr class="max-w-screen-lg w-full border-gray-700 my-6">
     <div>
-        <a rel="license" href="https://github.com/shihern/developer-portfolio-blog" class="no-link underline hover:text-blue-400">Source code</a> licensed under the <a rel="license" href="https://www.gnu.org/licenses/agpl-3.0.html" class="no-link underline hover:text-blue-400">AGPL-3.0</a>. 
+        <a rel="source" href="https://github.com/shihern/developer-portfolio-blog" class="no-link underline hover:text-blue-400">Source code</a> licensed under the <a rel="license" href="https://www.gnu.org/licenses/agpl-3.0.html" class="no-link underline hover:text-blue-400">AGPL-3.0</a>. 
     </div>
     <div class="mt-1">
-        All content licensed under <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/" class="no-link underline hover:text-blue-400">CC BY-SA 4.0</a>.
+        All content licensed under <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/" class="no-link underline hover:text-blue-400">CC BY-SA 4.0</a>.
     </div>
 </footer>

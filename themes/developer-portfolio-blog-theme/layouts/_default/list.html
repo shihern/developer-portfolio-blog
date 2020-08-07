@@ -27,7 +27,7 @@
             <h1 class="m-0"><a class="link" href="{{ .RelPermalink }}">{{ .Title }}</a></h1>
             <div class="text-sm flex flex-row items-center">
                 <div class="fill-current h-auto w-5 mr-1">
-                    {{- readFile "/assets/icons/calendar.svg"| safeHTML -}}
+                    {{- partial "svg.html" "calendar" -}}
                 </div>
                 <div>Posted on {{ dateFormat "2006-01-02" .Date }}</div>
             </div>

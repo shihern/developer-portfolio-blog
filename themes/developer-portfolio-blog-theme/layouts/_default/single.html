@@ -21,7 +21,7 @@
     <h1 class="font-bold text-5xl text-gray-800 mb-0 mt-12">{{ .Title }}</h1>
     <div class="flex flex-row items-center">
         <div class="fill-current h-auto w-5 mr-1">
-            {{- readFile "/assets/icons/calendar.svg"| safeHTML -}}
+            {{- partial "svg.html" "calendar" -}}
         </div>
         <div>Posted on {{ dateFormat "2006-01-02" .Date }}</div>
     </div>
