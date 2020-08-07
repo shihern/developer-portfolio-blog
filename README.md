@@ -95,7 +95,7 @@ education:
 ```
 
 ### Favicon
-Place `favicon-32x32.png` and `favicon-16x16.png` in the root of the `static/` folder.
+Place `favicon-32x32.png`, `favicon-16x16.png`, and `favicon.ico` in the root of the `static/` folder.
 
 
 ## Running
