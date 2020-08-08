@@ -3,7 +3,7 @@
     "version": "1.0.0",
     "description": "Developer portfolio and blog website made with Hugo and TailwindCSS.",
     "main": "index.js",
-    "repository": "https://github.com/shihern/developer-portfolio-blog",
+    "repository": "https://github.com/connlim/developer-portfolio-blog",
     "author": "Connor Lim <dev@connorlim.net>",
     "license": "AGPL-3.0-or-later",
     "scripts": {

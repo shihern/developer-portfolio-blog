@@ -16,9 +16,9 @@
 
 name = "developer-portfolio-blog-theme"
 license = "AGPL-3.0-or-later"
-licenselink = "https://github.com/shihern/developer-portfolio-blog/blob/master/LICENSE"
+licenselink = "https://github.com/connlim/developer-portfolio-blog/blob/master/LICENSE"
 description = "Developer portfolio and blog website made with Hugo and TailwindCSS."
-homepage = "https://github.com/shihern/developer-portfolio-blog"
+homepage = "https://github.com/connlim/developer-portfolio-blog"
 tags = ["developer", "Hugo", "Tailwind CSS", "theme"]
 features = []
 min_version = "0.69"
