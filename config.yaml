@@ -28,3 +28,11 @@ params:
   - title: Email
     url: mailto:hello@example.com
     svg: calendar
+
+markup:
+  highlight:
+    codeFences: true
+    lineNos: false
+    noClasses: false
+    style: monokai
+    tabWidth: 4
