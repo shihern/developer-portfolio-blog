@@ -1,5 +1,4 @@
 // Developer portfolio and blog website made with Hugo and TailwindCSS
-// Line: 54
 // Copyright (C) 2020  Connor Lim
 // 
 // This program is free software: you can redistribute it and/or modify
@@ -63,17 +62,21 @@ const purgecss = require('@fullhuman/postcss-purgecss')({
 
         return broadMatches.concat(innerMatches)
     }
-})
+});
+
+const cssnano = require('cssnano')({
+    preset: 'default',
+});
 
 module.exports = {    
     plugins: [        
         require('postcss-import')({
             path: [themeDir]
-            }), 
+        }), 
         require('tailwindcss')(themeDir + 'assets/css/tailwind.config.js'),
         require('autoprefixer')({
             path: [themeDir]
         }),
-        ...(process.env.HUGO_ENVIRONMENT === 'production' ? [purgecss] : [])
+        ...(process.env.HUGO_ENVIRONMENT === 'production' ? [cssnano, purgecss] : [])
     ]
 }
