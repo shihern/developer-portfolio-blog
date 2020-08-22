@@ -28,6 +28,12 @@ module.exports = {
       },
     },
   },
+  future: {
+    removeDeprecatedGapUtilities: true,
+  },
+  experimental: {
+    applyComplexClasses: true,
+  },
   variants: {},
   plugins: []
 }
