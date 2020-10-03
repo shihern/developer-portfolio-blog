@@ -7,7 +7,7 @@
     "author": "Connor Lim <dev@connorlim.net>",
     "license": "AGPL-3.0-or-later",
     "scripts": {
-        "setup": "npm install -g postcss-cli autoprefixer; npm install",
+        "setup": "npm install",
         "build": "hugo --minify --gc",
         "dev": "hugo server --disableFastRender"
     },
