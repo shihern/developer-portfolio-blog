@@ -50,8 +50,10 @@ const purgecss = require('@fullhuman/postcss-purgecss')({
         'content/**/*.html',
     ],
 
-    whitelistPatternsChildren: [/^chroma$/, /^pre$/],
-
+    safelist: {
+        greedy: [/^chroma$/, /^pre$/],
+    },
+    
     // This is the function used to extract class names from your templates
     defaultExtractor: content => {
         // Capture as liberally as possible, including things like `h-(screen-1.5)`

@@ -12,7 +12,7 @@
         "dev": "hugo server --disableFastRender"
     },
     "devDependencies": {
-        "@fullhuman/postcss-purgecss": "^2.3.0",
+        "@fullhuman/postcss-purgecss": "^3.0.0",
         "autoprefixer": "^9.8.6",
         "cssnano": "^4.1.10",
         "postcss": "^8.1.1",
