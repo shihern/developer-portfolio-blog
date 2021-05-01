@@ -63,7 +63,7 @@ Note that the icons are generated on the page by directly outputting the svg int
 
 Additionally, Hugo live reload is not able to detect if you modify the svg file. You have to forcibly reload the server if you edit the svg file on disk
 
-1. Enter your working experience
+4. Enter your working experience
 ```yaml
 experience:
   - title: Job Title
@@ -84,7 +84,7 @@ projects:
         svg: calendar
 ```
 #### Note:
-Put the relevant skills for the project under the `tags` section. The icon will be automatically populated based on the icon in the `skills` section. **Hugo WILL throw an error if the skill and icon is not found**
+Put the relevant skills for the project under the `tags` section. **Hugo WILL throw an error if the icon is not found**
 
 6. Enter your educational history
 ```yaml
