@@ -38,7 +38,8 @@ projects:
     description: Description
     url: https://github.com/
     tags: 
-      - Your Skill Name
+      - name: My project skill
+        svg: calendar
 
 education:
   - title: College

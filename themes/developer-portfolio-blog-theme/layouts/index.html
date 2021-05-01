@@ -74,9 +74,7 @@
                 </div>
                 <div class="mb-2">{{- .description -}}</div>
                 {{- range .tags -}}
-                    {{- range where $.Site.Data.homepage.skills ".name" . -}}
-                        {{- partial "skill-tags.html" (dict "name" .name "svg" .svg) -}}
-                    {{- end -}}
+                    {{- partial "skill-tags.html" (dict "name" .name "svg" .svg) -}}
                 {{- end -}}
             </div>
             {{- end -}}

@@ -80,10 +80,11 @@ projects:
     description: Description
     url: https://github.com/
     tags: 
-      - Your Skill Name
+      - name: Skill name
+        svg: calendar
 ```
 #### Note:
-Put the relevant skills for the project under the `tags` section. Ensure that the skill name matches one of the skills from the `skills` section earlier. The icon will be automatically populated based on the icon in the `skills` section. **Hugo WILL throw an error if the skill and icon is not found**
+Put the relevant skills for the project under the `tags` section. The icon will be automatically populated based on the icon in the `skills` section. **Hugo WILL throw an error if the skill and icon is not found**
 
 6. Enter your educational history
 ```yaml
